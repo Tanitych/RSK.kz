@@ -66,34 +66,7 @@ function adaptive_function2() {
 }
 adaptive_function2();
 
-//////slider
-
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // effect: 'coverflow',
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    slidesPerView: 1,
-    spaceBetween: 10,
-    freeMode: false,
-    // autoplay: {
-    //     delay: 2000,
-    //     stopOnLastSlide: false,
-    // },
-    speed: 1000,
-});
-
-
-
-
+//input_mask
 $(function () {
     $("#phone").mask("+7(999) 999-9999");
 });
@@ -104,9 +77,13 @@ $(function () {
 //modal1
 var modal1 = document.getElementById("modal1");
 var modalBtn1 = document.getElementById("modal_btn1");
+var modalBtn4 = document.getElementById("footerModalBbtn");
 var modalClose1 = document.getElementById("modal_close1");
 
 modalBtn1.onclick = function () {
+    modal1.style.display = "block"
+}
+modalBtn4.onclick = function () {
     modal1.style.display = "block"
 }
 modalClose1.onclick = function () {
@@ -121,9 +98,13 @@ window.onclick = function (event) {
 //modal2
 var modal2 = document.getElementById("modal2");
 var modalBtn2 = document.getElementById("modal_btn2");
+var modalBtn3 = document.getElementById("footerModalBbtn2");
 var modalClose2 = document.getElementById("modal_close2");
 
 modalBtn2.onclick = function () {
+    modal2.style.display = "block"
+}
+modalBtn3.onclick = function () {
     modal2.style.display = "block"
 }
 modalClose2.onclick = function () {
