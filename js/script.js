@@ -93,3 +93,73 @@ const swiper = new Swiper('.swiper-container', {
 
 
 
+
+$(function () {
+    $("#phone").mask("+7(999) 999-9999");
+});
+$(function () {
+    $("#phone2").mask("+7(999) 999-9999");
+});
+
+//modal1
+var modal1 = document.getElementById("modal1");
+var modalBtn1 = document.getElementById("modal_btn1");
+var modalClose1 = document.getElementById("modal_close1");
+
+modalBtn1.onclick = function () {
+    modal1.style.display = "block"
+}
+modalClose1.onclick = function () {
+    modal1.style.display = "none"
+}
+window.onclick = function (event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none"
+    }
+}
+
+//modal2
+var modal2 = document.getElementById("modal2");
+var modalBtn2 = document.getElementById("modal_btn2");
+var modalClose2 = document.getElementById("modal_close2");
+
+modalBtn2.onclick = function () {
+    modal2.style.display = "block"
+}
+modalClose2.onclick = function () {
+    modal2.style.display = "none"
+}
+window.onclick = function (event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none"
+    }
+}
+
+//tabs
+const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
+const tabsItems = document.querySelectorAll(".tabs__item");
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+    item.addEventListener("click", function () {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-tab");
+        let currentTab = document.querySelector(tabId);
+
+        if (!currentBtn.classList.contains('active')) {
+            tabsBtn.forEach(function (item) {
+                item.classList.remove('active');
+            });
+
+            tabsItems.forEach(function (item) {
+                item.classList.remove('active');
+            });
+
+            currentBtn.classList.add('active');
+            currentTab.classList.add('active');
+        }
+    });
+}
+document.querySelector('.tabs__nav-btn').click();
+

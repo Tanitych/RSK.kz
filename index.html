@@ -208,7 +208,7 @@
 </header>
 
     <main>
-      <div class="content">
+      <div class="content background_content">
         <div class="main_content">
           <section class="main_slider_block">
             <div class="swiper-container">
@@ -271,7 +271,12 @@
             </div>
           </section>
           <section class="news_list">
-            <h3 class="title_2">Новости</h3>
+            <div class="link_line">
+              <h3 class="title_2">Новости</h3>
+              <a href="" class="look_more_link">
+                Смотреть еще <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
             <div class="news_list_content">
               <div class="news_list_item">
                 <a href="">
@@ -400,17 +405,214 @@
                 >
               </div>
             </div>
+            <button class="load_more_btn">
+              <img src="img/icons/arrows-refresh-reload-loading1.svg" alt="" />
+              Показать больше новостей
+            </button>
           </section>
         </div>
-        <aside class="side_blocks">sadsadsa br dsadas asd</aside>
+        <aside class="side_blocks">
+          <div class="modals_block">
+            <button id="modal_btn2" class="modal_btn1">Отправить вопрос</button>
+            <button id="modal_btn1" class="modal_btn1">
+              Акредитация на брифинг
+            </button>
+            <div id="modal1" class="modal">
+              <form class="modal_form" action="">
+                <div class="modal_head">
+                  <h4 брифинга class="modal_title">Аккредитация брифинга</h4>
+                  <div id="modal_close1" class="modal_close_btn">
+                    <img src="img/icons/cross_close.svg" alt="" />
+                  </div>
+                </div>
+                <div class="modal_body">
+                  <input type="text" placeholder="ФИО" required />
+                  <input
+                    type="tel"
+                    required
+                    placeholder="Ваш номер телефона"
+                    id="phone"
+                  />
+                  <input type="email" placeholder="E-mail" required />
+                  <input type="text" placeholder="СМИ" required />
+                </div>
+                <button type="submit" class="form_btn">Отправить заявку</button>
+              </form>
+            </div>
+            <div id="modal2" class="modal">
+              <form class="modal_form" action="">
+                <div class="modal_head">
+                  <h4 брифинга class="modal_title">
+                    Онлайн заявка <br />
+                    на проведение брифинга
+                  </h4>
+                  <div id="modal_close2" class="modal_close_btn">
+                    <img src="img/icons/cross_close.svg" alt="" />
+                  </div>
+                </div>
+                <div class="checkboxes_body">
+                  <label class="radio_container"
+                    >Юридическое лицо
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="radio"
+                      required
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="radio_container"
+                    >Физическое лицо
+                    <input type="radio" name="radio" required />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="modal_body">
+                  <input type="text" placeholder="ФИО" required />
+                  <input
+                    type="text"
+                    placeholder="Организация, если юр.лицо"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    required
+                    placeholder="Телефон"
+                    id="phone2"
+                  />
+                  <textarea
+                    class="text_input"
+                    required
+                    placeholder="Интересующие вопросы"
+                    name=""
+                    id=""
+                  ></textarea>
+                </div>
+                <button type="submit" class="form_btn">Отправить заявку</button>
+              </form>
+            </div>
+          </div>
+          <div class="tabs">
+            <div class="tabs__nav">
+              <h4 class="tabs_title">Пресс-анонсы</h4>
+              <button class="tabs__nav-btn" type="button" data-tab="#tab_1">
+                сегодня
+              </button>
+              <button class="tabs__nav-btn" type="button" data-tab="#tab_2">
+                завтра
+              </button>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__item" id="tab_1">
+                <a href="" class="tabs__item_link">
+                  <p class="text">
+                    Пресс-конференция на тему: "О прохождении пожароопасного
+                    периода в стране"
+                  </p>
+                  <p class="date">1 мая 10:10</p>
+                </a>
+                <a href="" class="tabs__item_link">
+                  <p class="text">
+                    Пресс-конференция на тему: «Социальная поддержка ветеранов
+                    ВОВ»
+                  </p>
+                  <p class="date">1 мая 10:10</p>
+                </a>
+                <a href="" class="tabs__item_link">
+                  <p class="text">
+                    Пресс-конференция на тему: «Итоги отчетной встречи перед
+                    населением Министра здравоохранения РК»
+                  </p>
+                  <p class="date">1 мая 10:10</p>
+                </a>
+                <a href="" class="tabs__item_link">
+                  <p class="text">
+                    Пресс-конференция на тему: «Социальная поддержка ветеранов
+                    ВОВ»
+                  </p>
+                  <p class="date">1 мая 10:10</p>
+                </a>
+              </div>
+              <div class="tabs__item" id="tab_2">
+                <a href="" class="tabs__item_link">
+                  <p class="text">
+                    Пресс-конференция на тему: «Социальная поддержка ветеранов
+                    ВОВ»
+                  </p>
+                  <p class="date">1 мая 10:10</p>
+                </a>
+                <a href="" class="tabs__item_link">
+                  <p class="text">
+                    Пресс-конференция на тему: "О прохождении пожароопасного
+                    периода в стране"
+                  </p>
+                  <p class="date">1 мая 10:10</p>
+                </a>
+
+                <a href="" class="tabs__item_link">
+                  <p class="text">
+                    Пресс-конференция на тему: «Итоги отчетной встречи перед
+                    населением Министра здравоохранения РК»
+                  </p>
+                  <p class="date">1 мая 10:10</p>
+                </a>
+                <a href="" class="tabs__item_link">
+                  <p class="text">
+                    Пресс-конференция на тему: «Социальная поддержка ветеранов
+                    ВОВ»
+                  </p>
+                  <p class="date">1 мая 10:10</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="slider_video">
+            <div class="swiper-container2">
+              <div class="aside_swiper_head">
+                <h3 class="title_2">Видео</h3>
+                <div class="swiper_btns">
+                  <div class="swiper-prev">
+                    <i class="fas fa-chevron-left"></i>
+                  </div>
+                  <div class="swiper-next">
+                    <i class="fas fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </main>
     
-
     <script src="js/jq/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+      const swiper2 = new Swiper(".swiper-container2", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-next",
+          prevEl: ".swiper-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
