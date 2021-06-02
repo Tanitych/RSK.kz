@@ -2030,3 +2030,36 @@ footer {
     color: var(--black);
   }
 }
+
+.news_body.gallery_inner {
+  .title_2 {
+    max-width: 730px;
+  }
+}
+
+.gallery_inner_swiper {
+  margin: 0 auto;
+  max-width: 856px;
+}
+.photo_gallery_inner {
+  margin: 30px 0px 0px 0px;
+  .swiper-pagination-bullets {
+    top: unset;
+    bottom: 0;
+  }
+}
+.photo_gallery_inner {
+  .content2 {
+    max-width: 870px;
+  }
+}
+.gallery_inner_slider {
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 607px;
+    min-height: 607px;
+  }
+}

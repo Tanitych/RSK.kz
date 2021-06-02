@@ -100,3 +100,21 @@ const swiper3 = new Swiper('.swiper-container3', {
         },
     },
 });
+
+const swiper5 = new Swiper('.swiper-container5', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grabCursor: true,
+    effect: "flip",
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+    },
+});
