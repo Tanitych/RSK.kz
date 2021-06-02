@@ -24,7 +24,7 @@ $(window).resize(function (event) {
 function adaptive_header(w, h) {
     var headerMenu = $('.social_adaptive');
     var headerLang = $('.header__social');
-    if (w < 768) {
+    if (w < 769) {
         if (!headerLang.hasClass('done')) {
             headerLang.addClass('done').appendTo(headerMenu);
         }
@@ -49,7 +49,7 @@ $(window).resize(function () {
 function adaptive_header2(w, h) {
     var headerMenu2 = $('.lang_container');
     var headerLang2 = $('.lang_dropdown');
-    if (w < 768) {
+    if (w < 769) {
         if (!headerLang2.hasClass('done')) {
             headerLang2.addClass('done').appendTo(headerMenu2);
         }
@@ -65,6 +65,56 @@ function adaptive_function2() {
     adaptive_header2(w, h);
 }
 adaptive_function2();
+
+//////////////////////////////
+
+$(window).resize(function () {
+    adaptive_element_function();
+});
+function adaptive_element(w, h) {
+    var element_menu = $('.responsive_tabs');
+    var element_item = $('.tabs');
+    if (w < 768) {
+        if (!element_item.hasClass('done')) {
+            element_item.addClass('done').appendTo(element_menu);
+        }
+    } else {
+        if (element_item.hasClass('done')) {
+            element_item.removeClass('done').prependTo($('.responsive_return_tabs'));
+        }
+    }
+}
+function adaptive_element_function() {
+    var w = $(window).outerWidth();
+    var h = $(window).outerHeight();
+    adaptive_element(w, h);
+}
+adaptive_element_function();
+
+//////////////////////////////////
+
+$(window).resize(function () {
+    adaptive_element_function2();
+});
+function adaptive_element2(w, h) {
+    var element_menu = $('.modals_block_responsive');
+    var element_item = $('.modals_block');
+    if (w < 768) {
+        if (!element_item.hasClass('done')) {
+            element_item.addClass('done').appendTo(element_menu);
+        }
+    } else {
+        if (element_item.hasClass('done')) {
+            element_item.removeClass('done').prependTo($('.modals_block_return'));
+        }
+    }
+}
+function adaptive_element_function2() {
+    var w = $(window).outerWidth();
+    var h = $(window).outerHeight();
+    adaptive_element2(w, h);
+}
+adaptive_element_function2();
 
 //input_mask
 $(function () {

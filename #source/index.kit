@@ -77,6 +77,22 @@
                       <p class="data_label">1 мая 10:10</p>
                     </a>
                   </div>
+                  <div class="swiper-slide main_slider">
+                    <a href="">
+                      <div class="main_slider_img">
+                        <img
+                          class="hover_img"
+                          src="img/main_slider_block/Rectangle_40.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <h2 class="main_slider_title">
+                        «QazVac» и «Спутник V» – принципиально разные вакцины.
+                        Их смешивать нельзя
+                      </h2>
+                      <p class="data_label">1 мая 10:10</p>
+                    </a>
+                  </div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev">
@@ -87,9 +103,11 @@
                 </div>
               </div>
             </section>
+            <div class="modals_block_responsive"></div>
+            <div class="responsive_tabs"></div>
             <section class="news_list">
               <div class="link_line">
-                <h3 class="title_2">Новости</h3>
+                <a href="news-page.html" class="title_2">Новости</a>
                 <a href="" class="look_more_link">
                   Смотреть еще <i class="fas fa-chevron-right"></i>
                 </a>
@@ -268,170 +286,177 @@
             </section>
           </div>
           <aside class="side_blocks">
-            <div class="modals_block">
-              <button id="modal_btn2" class="modal_btn1">
-                Отправить вопрос
-              </button>
-              <button id="modal_btn1" class="modal_btn1">
-                Акредитация на брифинг
-              </button>
-              <div id="modal1" class="modal">
-                <form class="modal_form" action="">
-                  <div class="modal_head">
-                    <h4 брифинга class="modal_title">Аккредитация брифинга</h4>
-                    <div id="modal_close1" class="modal_close_btn">
-                      <img src="img/icons/cross_close.svg" alt="" />
+            <div class="modals_block_return">
+              <div class="modals_block">
+                <button id="modal_btn2" class="modal_btn1">
+                  Отправить вопрос
+                </button>
+                <button id="modal_btn1" class="modal_btn1">
+                  Акредитация на брифинг
+                </button>
+                <div id="modal1" class="modal">
+                  <form class="modal_form" action="">
+                    <div class="modal_head">
+                      <h4 брифинга class="modal_title">
+                        Аккредитация брифинга
+                      </h4>
+                      <div id="modal_close1" class="modal_close_btn">
+                        <img src="img/icons/cross_close.svg" alt="" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="modal_body">
-                    <input type="text" placeholder="ФИО" required />
-                    <input
-                      type="tel"
-                      required
-                      placeholder="Ваш номер телефона"
-                      id="phone"
-                    />
-                    <input type="email" placeholder="E-mail" required />
-                    <input type="text" placeholder="СМИ" required />
-                  </div>
-                  <button type="submit" class="form_btn">
-                    Отправить заявку
-                  </button>
-                </form>
-              </div>
-              <div id="modal2" class="modal">
-                <form class="modal_form" action="">
-                  <div class="modal_head">
-                    <h4 брифинга class="modal_title">
-                      Онлайн заявка <br />
-                      на проведение брифинга
-                    </h4>
-                    <div id="modal_close2" class="modal_close_btn">
-                      <img src="img/icons/cross_close.svg" alt="" />
-                    </div>
-                  </div>
-                  <div class="checkboxes_body">
-                    <label class="radio_container"
-                      >Юридическое лицо
+                    <div class="modal_body">
+                      <input type="text" placeholder="ФИО" required />
                       <input
-                        type="radio"
-                        checked="checked"
-                        name="radio"
+                        type="tel"
+                        required
+                        placeholder="Ваш номер телефона"
+                        id="phone"
+                      />
+                      <input type="email" placeholder="E-mail" required />
+                      <input type="text" placeholder="СМИ" required />
+                    </div>
+                    <button type="submit" class="form_btn">
+                      Отправить заявку
+                    </button>
+                  </form>
+                </div>
+                <div id="modal2" class="modal">
+                  <form class="modal_form" action="">
+                    <div class="modal_head">
+                      <h4 брифинга class="modal_title">
+                        Онлайн заявка <br />
+                        на проведение брифинга
+                      </h4>
+                      <div id="modal_close2" class="modal_close_btn">
+                        <img src="img/icons/cross_close.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="checkboxes_body">
+                      <label class="radio_container"
+                        >Юридическое лицо
+                        <input
+                          type="radio"
+                          checked="checked"
+                          name="radio"
+                          required
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="radio_container"
+                        >Физическое лицо
+                        <input type="radio" name="radio" required />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="modal_body">
+                      <input type="text" placeholder="ФИО" required />
+                      <input
+                        type="text"
+                        placeholder="Организация, если юр.лицо"
                         required
                       />
-                      <span class="checkmark"></span>
-                    </label>
-                    <label class="radio_container"
-                      >Физическое лицо
-                      <input type="radio" name="radio" required />
-                      <span class="checkmark"></span>
-                    </label>
-                  </div>
-                  <div class="modal_body">
-                    <input type="text" placeholder="ФИО" required />
-                    <input
-                      type="text"
-                      placeholder="Организация, если юр.лицо"
-                      required
-                    />
-                    <input
-                      type="tel"
-                      required
-                      placeholder="Телефон"
-                      id="phone2"
-                    />
-                    <textarea
-                      class="text_input"
-                      required
-                      placeholder="Интересующие вопросы"
-                      name=""
-                      id=""
-                    ></textarea>
-                  </div>
-                  <button type="submit" class="form_btn">
-                    Отправить заявку
-                  </button>
-                </form>
+                      <input
+                        type="tel"
+                        required
+                        placeholder="Телефон"
+                        id="phone2"
+                      />
+                      <textarea
+                        class="text_input"
+                        required
+                        placeholder="Интересующие вопросы"
+                        name=""
+                        id=""
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="form_btn">
+                      Отправить заявку
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
-            <div class="tabs">
-              <div class="tabs__nav">
-                <h4 class="tabs_title">Пресс-анонсы</h4>
-                <button class="tabs__nav-btn" type="button" data-tab="#tab_1">
-                  сегодня
-                </button>
-                <button class="tabs__nav-btn" type="button" data-tab="#tab_2">
-                  завтра
-                </button>
-              </div>
-              <div class="tabs__content">
-                <div class="tabs__item" id="tab_1">
-                  <a href="" class="tabs__item_link">
-                    <p class="text">
-                      Пресс-конференция на тему: "О прохождении пожароопасного
-                      периода в стране"
-                    </p>
-                    <p class="date">1 мая 10:10</p>
-                  </a>
-                  <a href="" class="tabs__item_link">
-                    <p class="text">
-                      Пресс-конференция на тему: «Социальная поддержка ветеранов
-                      ВОВ»
-                    </p>
-                    <p class="date">1 мая 10:10</p>
-                  </a>
-                  <a href="" class="tabs__item_link">
-                    <p class="text">
-                      Пресс-конференция на тему: «Итоги отчетной встречи перед
-                      населением Министра здравоохранения РК»
-                    </p>
-                    <p class="date">1 мая 10:10</p>
-                  </a>
-                  <a href="" class="tabs__item_link">
-                    <p class="text">
-                      Пресс-конференция на тему: «Социальная поддержка ветеранов
-                      ВОВ»
-                    </p>
-                    <p class="date">1 мая 10:10</p>
-                  </a>
-                </div>
-                <div class="tabs__item" id="tab_2">
-                  <a href="" class="tabs__item_link">
-                    <p class="text">
-                      Пресс-конференция на тему: «Социальная поддержка ветеранов
-                      ВОВ»
-                    </p>
-                    <p class="date">1 мая 10:10</p>
-                  </a>
-                  <a href="" class="tabs__item_link">
-                    <p class="text">
-                      Пресс-конференция на тему: "О прохождении пожароопасного
-                      периода в стране"
-                    </p>
-                    <p class="date">1 мая 10:10</p>
-                  </a>
 
-                  <a href="" class="tabs__item_link">
-                    <p class="text">
-                      Пресс-конференция на тему: «Итоги отчетной встречи перед
-                      населением Министра здравоохранения РК»
-                    </p>
-                    <p class="date">1 мая 10:10</p>
-                  </a>
-                  <a href="" class="tabs__item_link">
-                    <p class="text">
-                      Пресс-конференция на тему: «Социальная поддержка ветеранов
-                      ВОВ»
-                    </p>
-                    <p class="date">1 мая 10:10</p>
-                  </a>
+            <div class="responsive_return_tabs">
+              <div class="tabs">
+                <div class="tabs__nav">
+                  <h4 class="tabs_title">Пресс-анонсы</h4>
+                  <button class="tabs__nav-btn" type="button" data-tab="#tab_1">
+                    сегодня
+                  </button>
+                  <button class="tabs__nav-btn" type="button" data-tab="#tab_2">
+                    завтра
+                  </button>
+                </div>
+                <div class="tabs__content">
+                  <div class="tabs__item" id="tab_1">
+                    <a href="" class="tabs__item_link">
+                      <p class="text">
+                        Пресс-конференция на тему: "О прохождении пожароопасного
+                        периода в стране"
+                      </p>
+                      <p class="date">1 мая 10:10</p>
+                    </a>
+                    <a href="" class="tabs__item_link">
+                      <p class="text">
+                        Пресс-конференция на тему: «Социальная поддержка
+                        ветеранов ВОВ»
+                      </p>
+                      <p class="date">1 мая 10:10</p>
+                    </a>
+                    <a href="" class="tabs__item_link">
+                      <p class="text">
+                        Пресс-конференция на тему: «Итоги отчетной встречи перед
+                        населением Министра здравоохранения РК»
+                      </p>
+                      <p class="date">1 мая 10:10</p>
+                    </a>
+                    <a href="" class="tabs__item_link">
+                      <p class="text">
+                        Пресс-конференция на тему: «Социальная поддержка
+                        ветеранов ВОВ»
+                      </p>
+                      <p class="date">1 мая 10:10</p>
+                    </a>
+                  </div>
+                  <div class="tabs__item" id="tab_2">
+                    <a href="" class="tabs__item_link">
+                      <p class="text">
+                        Пресс-конференция на тему: «Социальная поддержка
+                        ветеранов ВОВ»
+                      </p>
+                      <p class="date">1 мая 10:10</p>
+                    </a>
+                    <a href="" class="tabs__item_link">
+                      <p class="text">
+                        Пресс-конференция на тему: "О прохождении пожароопасного
+                        периода в стране"
+                      </p>
+                      <p class="date">1 мая 10:10</p>
+                    </a>
+
+                    <a href="" class="tabs__item_link">
+                      <p class="text">
+                        Пресс-конференция на тему: «Итоги отчетной встречи перед
+                        населением Министра здравоохранения РК»
+                      </p>
+                      <p class="date">1 мая 10:10</p>
+                    </a>
+                    <a href="" class="tabs__item_link">
+                      <p class="text">
+                        Пресс-конференция на тему: «Социальная поддержка
+                        ветеранов ВОВ»
+                      </p>
+                      <p class="date">1 мая 10:10</p>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="slider_video">
-              <div class="swiper-container2">
+              <div class="swiper-container4">
                 <div class="aside_banner_head">
-                  <h3 class="title_2">Видео</h3>
+                  <a href="" class="title_2">Видео</a>
                   <div class="swiper_btns">
                     <div class="swiper-prev">
                       <img src="img/icons/min-ar-left.svg" alt="" />
@@ -441,10 +466,7 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
                   <div class="swiper-slide">
                     <div class="aside_min_news">
                       <a href="">
@@ -562,7 +584,7 @@
             <div class="slider_video">
               <div class="swiper-container2">
                 <div class="aside_banner_head">
-                  <h3 class="title_2">Фото</h3>
+                  <a href="photo_gallery_page.html" class="title_2">Фото</a>
                   <div class="swiper_btns">
                     <div class="swiper-prev">
                       <img src="img/icons/min-ar-left.svg" alt="" />
@@ -597,7 +619,7 @@
             <a href="" class="tips_link">
               <img src="img/aside_block/corona_img.jpg" alt="" />
             </a>
-            <a href="" class="tips_link">
+            <a href="state_symbol_page.html" class="tips_link">
               <img src="img/aside_block/resmi.jpg" alt="" />
             </a>
           </aside>

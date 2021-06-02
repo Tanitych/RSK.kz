@@ -26,6 +26,7 @@ const swiper2 = new Swiper(".swiper-container2", {
     direction: "horizontal",
     loop: true,
     slidesPerView: 1,
+    spaceBetween: 15,
     navigation: {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
@@ -33,6 +34,37 @@ const swiper2 = new Swiper(".swiper-container2", {
     scrollbar: {
         el: ".swiper-scrollbar",
     },
+    breakpoints: {
+        769: {
+            slidesPerView: 1,
+        },
+        400: {
+            slidesPerView: 2,
+        }
+    }
+});
+
+const swiper4 = new Swiper(".swiper-container4", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+    },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 1,
+        },
+        600: {
+            slidesPerView: 2,
+        }
+    }
 });
 
 const swiper3 = new Swiper('.swiper-container3', {
