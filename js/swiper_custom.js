@@ -106,7 +106,6 @@ const swiper5 = new Swiper('.swiper-container5', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 30,
     grabCursor: true,
     effect: "flip",
     pagination: {

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>РСКА.kz</title>
+    <link rel="shortcut icon" href="img/logo.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- @import "header.html" -->
+    <main>
+      <div class="content2 question_container border_content">
+        <div class="bread_crumps">
+          <a href="index.html" class="bread_crumps_item">Главная </a>
+          <i class="fas fa-chevron-right"></i>
+          <a href="" class="bread_crumps_item active">Контакты </a>
+        </div>
+        <div class="contacts_two_half">
+          <div class="left">
+            <a href="news-page.html" class="title_2">Контакты</a>
+            <p class="subtitle">Региональная служба коммуникаций Алматы</p>
+            <div class="contacts_content">
+              <div class="contacts_item">
+                <img src="img/icons/blue_loc.svg" alt="" />
+                <p class="text">г. Нур-Султан, ул. Кунаева, д. 4</p>
+              </div>
+              <div class="contacts_item">
+                <img src="img/icons/blue_tel.svg" alt="" />
+                <p class="text">+7 (727) 272-38-59</p>
+              </div>
+              <div class="contacts_item">
+                <img src="img/icons/blue_tel.svg" alt="" />
+                <p class="text">+7 (708) 973-46-85</p>
+              </div>
+              <div class="contacts_item">
+                <img src="img/icons/blue_mail.svg" alt="" />
+                <p class="text">info@rsk.almaty.kz</p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="map_block">
+              <div id="map" style="width: 100%; height: 350px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- @import "footer.html" -->
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script>
+      var map;
+
+      DG.then(function () {
+        map = DG.map("map", {
+          center: [43.24, 76.89],
+          zoom: 13,
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper_custom.js"></script>
+  </body>
+</html>
